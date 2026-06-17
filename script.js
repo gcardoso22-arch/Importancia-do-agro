@@ -1,4 +1,4 @@
-Aqui está o código completo do arquivo script.js.
+
 
 Este script controla a interatividade do seu site: ele cria o botão de Modo Escuro dinamicamente no canto da tela e faz as seções de texto surgirem com uma animação suave à medida que você rola a página para baixo.
 
