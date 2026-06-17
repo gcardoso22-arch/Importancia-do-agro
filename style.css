@@ -1,1 +1,150 @@
+CSS
+/* ==========================================================================
+   1. RESET E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f4;
+    color: #333333;
+    /* Suaviza a transição de cores quando o JavaScript ativar o Modo Escuro */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ==========================================================================
+   2. TOPO DO SITE (HEADER)
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #c8e6c9;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   3. CONTEÚDO PRINCIPAL (MAIN E SECTIONS)
+   ========================================================================== */
+main {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Transição suave para as mudanças de estilo do JavaScript */
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+h2 {
+    color: #2e7d32;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+/* Detalhe visual: Linha decorativa verde abaixo dos títulos h2 */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #81c784;
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    transition: color 0.4s ease;
+}
+
+strong {
+    color: #1b5e20;
+}
+
+/* ==========================================================================
+   4. ESTILIZAÇÃO DAS LISTAS
+   ========================================================================== */
+ul {
+    list-style: none; /* Remove as bolinhas padrão */
+    margin: 1.5rem 0;
+}
+
+li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    transition: color 0.4s ease;
+}
+
+/* Ícone customizado de "Check" (✓) antes de cada item da lista */
+li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   5. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1a1a1a;
+    color: #aeaeae;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    border-top: 3px solid #2e7d32;
+}
+
+/* ==========================================================================
+   6. RESPONSIVIDADE (ADAPTAÇÃO PARA CELULARES)
+   ========================================================================== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
